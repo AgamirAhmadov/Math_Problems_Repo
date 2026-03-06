@@ -1111,6 +1111,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#visualizing-sample-spaces-with-tree-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizing Sample Spaces with Tree Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizing Sample Spaces with Tree Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-rockpaperscissors-played-twice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example — Rock–Paper–Scissors Played Twice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-tree-diagrams-are-useful" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Tree Diagrams Are Useful
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#task-1-coin-tossing" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1960,6 +1999,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#visualizing-sample-spaces-with-tree-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizing Sample Spaces with Tree Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizing Sample Spaces with Tree Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-rockpaperscissors-played-twice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example — Rock–Paper–Scissors Played Twice
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-tree-diagrams-are-useful" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Tree Diagrams Are Useful
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#task-1-coin-tossing" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2238,6 +2316,74 @@
 
 
 <h1 id="task-list-1-random-events-and-sample-spaces">Task List 1 — Random Events and Sample Spaces</h1>
+<h2 id="visualizing-sample-spaces-with-tree-diagrams">Visualizing Sample Spaces with Tree Diagrams</h2>
+<p>Before solving the tasks below, it is often helpful to <strong>visualize the experiment using a tree diagram</strong>.</p>
+<p>A <strong>tree diagram</strong> represents a random experiment step by step.</p>
+<ul>
+<li>Each <strong>branch</strong> represents a possible result of a single step of the experiment.</li>
+<li>Each <strong>level of the tree</strong> corresponds to the next stage of the experiment.</li>
+<li>Each <strong>path from the root to a leaf</strong> represents one <strong>elementary outcome</strong>.</li>
+</ul>
+<p>This method is especially useful when:</p>
+<ul>
+<li>the experiment consists of <strong>several consecutive steps</strong>,</li>
+<li><strong>the order of outcomes matters</strong>,</li>
+<li>we want to <strong>construct the sample space systematically</strong>.</li>
+</ul>
+<p>In such a diagram:</p>
+<ul>
+<li>the <strong>root</strong> represents the start of the experiment,</li>
+<li>each <strong>branching</strong> corresponds to the possible outcomes of the next step,</li>
+<li>each <strong>leaf of the tree</strong> corresponds to one element of the <strong>sample space</strong>.</li>
+</ul>
+<hr />
+<h3 id="example-rockpaperscissors-played-twice">Example — Rock–Paper–Scissors Played Twice</h3>
+<p>Consider an experiment in which a player chooses one of three options:</p>
+<ul>
+<li>Rock (<span class="arithmatex">\(R\)</span>)</li>
+<li>Paper (<span class="arithmatex">\(P\)</span>)</li>
+<li>Scissors (<span class="arithmatex">\(S\)</span>)</li>
+</ul>
+<p>Suppose the choice is made <strong>twice in a row</strong>, and the <strong>order matters</strong>.</p>
+<p>The experiment can be represented by the following <strong>tree diagram</strong>.</p>
+<pre><code>START
+ │
+ ├── R
+ │     ├── R
+ │     ├── P
+ │     └── S
+ │
+ ├── P
+ │     ├── R
+ │     ├── P
+ │     └── S
+ │
+ └── S
+       ├── R
+       ├── P
+       └── S
+</code></pre>
+<p>Each <strong>path from the root to a leaf</strong> represents one elementary outcome:</p>
+<div class="arithmatex">\[
+(R,R), (R,P), (R,S),
+(P,R), (P,P), (P,S),
+(S,R), (S,P), (S,S)
+\]</div>
+<p>Therefore the sample space contains</p>
+<div class="arithmatex">\[
+3 \times 3 = 9
+\]</div>
+<p>elementary outcomes.</p>
+<hr />
+<h3 id="why-tree-diagrams-are-useful">Why Tree Diagrams Are Useful</h3>
+<p>Tree diagrams help to:</p>
+<ul>
+<li><strong>construct the sample space step by step</strong>,</li>
+<li>clearly see how the <strong>number of outcomes grows</strong>,</li>
+<li>distinguish experiments <strong>with replacement</strong> and <strong>without replacement</strong>,</li>
+<li>understand what an <strong>elementary outcome</strong> represents.</li>
+</ul>
+<p>You are encouraged to <strong>draw tree diagrams for the experiments in the following tasks whenever possible</strong>.</p>
 <h2 id="task-1-coin-tossing">Task 1 — Coin Tossing</h2>
 <p>Consider an experiment consisting of tossing a <strong>fair coin</strong>.</p>
 <p>The order of outcomes matters.</p>
