@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="pl" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -8,35 +8,35 @@
       
       
       
-        <link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/02_probability_distributions/">
+        <link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/03_probability_distributions/">
       
       
-        <link rel="prev" href="../01_events_and_probability/">
+        <link rel="prev" href="../02_combinatorics/">
       
       
         <link rel="next" href="../../advanced/01_events_and_probability/">
       
       
         
-          <link rel="alternate" href="./" hreflang="pl">
+          <link rel="alternate" href="../../../pl/4_Metody_probabilistyczne/basic/03_probability_distributions/" hreflang="pl">
         
-          <link rel="alternate" href="../../../../4_Metody_probabilistyczne/basic/02_probability_distributions/" hreflang="en">
+          <link rel="alternate" href="./" hreflang="en">
         
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>2. Rozkłady prawdopodobieństwa - Math Problems</title>
+        <title>3. Probability Distributions - Math Problems</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#lista-zadan-2-rozkady-prawdopodobienstwa-wybrane-modele" class="md-skip">
-          Przejdź do treści
+        <a href="#task-list-03-probability-distributions-selected-models" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -97,8 +97,8 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
-    <a href="../../../" title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Rozkłady prawdopodobieństwa
+              3. Probability Distributions
             
           </span>
         </div>
@@ -158,20 +158,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Wybierz język">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="pl" class="md-select__link">
+            <a href="../../../pl/4_Metody_probabilistyczne/basic/03_probability_distributions/" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../../../4_Metody_probabilistyczne/basic/02_probability_distributions/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -192,16 +192,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Szukaj">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -212,7 +212,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicjowanie wyszukiwania
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -246,9 +246,9 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../" title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -266,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -311,7 +311,7 @@
   <span class="md-ellipsis">
     
   
-    Wykład: Matematyka
+    Lecture: Mathematics
   
 
     
@@ -327,7 +327,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Wykład: Matematyka
+    Lecture: Mathematics
   
 
           </label>
@@ -394,7 +394,7 @@
   <span class="md-ellipsis">
     
   
-    1. Macierze i operacje
+    1. Matrices & Operations
   
 
     
@@ -422,7 +422,7 @@
   <span class="md-ellipsis">
     
   
-    2. Wyznaczniki
+    2. Determinants
   
 
     
@@ -450,7 +450,7 @@
   <span class="md-ellipsis">
     
   
-    3. Odwracanie macierzy
+    3. Matrix Inversion
   
 
     
@@ -478,7 +478,7 @@
   <span class="md-ellipsis">
     
   
-    4. Układy równań
+    4. Systems of Equations
   
 
     
@@ -525,7 +525,7 @@
   <span class="md-ellipsis">
     
   
-    Geometria
+    Geometry
   
 
     
@@ -541,7 +541,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Geometria
+    Geometry
   
 
           </label>
@@ -561,7 +561,7 @@
   <span class="md-ellipsis">
     
   
-    1. Wektory
+    1. Vectors
   
 
     
@@ -589,7 +589,7 @@
   <span class="md-ellipsis">
     
   
-    2. Proste
+    2. Lines
   
 
     
@@ -617,7 +617,7 @@
   <span class="md-ellipsis">
     
   
-    3. Płaszczyzny
+    3. Planes
   
 
     
@@ -645,7 +645,7 @@
   <span class="md-ellipsis">
     
   
-    4. Prosta i płaszczyzna
+    4. Line and Plane
   
 
     
@@ -692,7 +692,7 @@
   <span class="md-ellipsis">
     
   
-    Analiza
+    Analysis
   
 
     
@@ -708,7 +708,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Analiza
+    Analysis
   
 
           </label>
@@ -728,7 +728,7 @@
   <span class="md-ellipsis">
     
   
-    1. Granice ciągów
+    1. Sequence Limits
   
 
     
@@ -756,7 +756,7 @@
   <span class="md-ellipsis">
     
   
-    2. Granice funkcji
+    2. Function Limits
   
 
     
@@ -784,7 +784,7 @@
   <span class="md-ellipsis">
     
   
-    3. Pochodne funkcji
+    3. Derivatives
   
 
     
@@ -812,7 +812,7 @@
   <span class="md-ellipsis">
     
   
-    4. Badanie funkcji
+    4. Function Analysis
   
 
     
@@ -840,7 +840,7 @@
   <span class="md-ellipsis">
     
   
-    5. Całki
+    5. Integrals
   
 
     
@@ -868,7 +868,7 @@
   <span class="md-ellipsis">
     
   
-    6. Zastosowania rachunku
+    6. Calculus Applications
   
 
     
@@ -924,7 +924,7 @@
   <span class="md-ellipsis">
     
   
-    Wykład: Metody probabilistyczne
+    Lecture: Probabilistic Methods
   
 
     
@@ -940,7 +940,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Wykład: Metody probabilistyczne
+    Lecture: Probabilistic Methods
   
 
           </label>
@@ -973,7 +973,7 @@
   <span class="md-ellipsis">
     
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
     
@@ -989,7 +989,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
           </label>
@@ -1022,7 +1022,7 @@
   <span class="md-ellipsis">
     
   
-    Podstawowe
+    Basic
   
 
     
@@ -1038,7 +1038,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Podstawowe
+    Basic
   
 
           </label>
@@ -1058,7 +1058,35 @@
   <span class="md-ellipsis">
     
   
-    1. Zdarzenia i prawdopodobieństwo
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_combinatorics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Combinatorics
   
 
     
@@ -1095,7 +1123,7 @@
   <span class="md-ellipsis">
     
   
-    2. Rozkłady prawdopodobieństwa
+    3. Probability Distributions
   
 
     
@@ -1113,7 +1141,7 @@
   <span class="md-ellipsis">
     
   
-    2. Rozkłady prawdopodobieństwa
+    3. Probability Distributions
   
 
     
@@ -1125,7 +1153,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1134,15 +1162,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wprowadzenie" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wprowadzenie
+        Introduction
       
     </span>
   </a>
@@ -1150,10 +1178,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-model-dwumianowy-kontrola-jakosci" class="md-nav__link">
+  <a href="#task-1-binomial-model-quality-control" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1 — Model dwumianowy (kontrola jakości)
+        Task 1 — Binomial Model (Quality Control)
       
     </span>
   </a>
@@ -1161,10 +1189,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-model-hipergeometryczny-pobieranie-z-partii" class="md-nav__link">
+  <a href="#task-2-hypergeometric-model-sampling-from-a-batch" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2 — Model hipergeometryczny (pobieranie z partii)
+        Task 2 — Hypergeometric Model (Sampling from a Batch)
       
     </span>
   </a>
@@ -1172,10 +1200,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-model-geometryczny-oczekiwanie-na-pierwsze-zdarzenie" class="md-nav__link">
+  <a href="#task-3-geometric-model-waiting-for-the-first-event" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3 — Model geometryczny (oczekiwanie na pierwsze zdarzenie)
+        Task 3 — Geometric Model (Waiting for the First Event)
       
     </span>
   </a>
@@ -1183,10 +1211,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-model-poissona-napyw-zdarzen" class="md-nav__link">
+  <a href="#task-4-poisson-model-arrival-of-events" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4 — Model Poissona (napływ zdarzeń)
+        Task 4 — Poisson Model (Arrival of Events)
       
     </span>
   </a>
@@ -1194,10 +1222,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-model-wielomianowy-kategorie-wynikow" class="md-nav__link">
+  <a href="#task-5-multinomial-model-categories-of-outcomes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5 — Model wielomianowy (kategorie wyników)
+        Task 5 — Multinomial Model (Categories of Outcomes)
       
     </span>
   </a>
@@ -1205,10 +1233,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-model-dwumianowy" class="md-nav__link">
+  <a href="#task-6-binomial-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6 — Model dwumianowy
+        Task 6 — Binomial Model
       
     </span>
   </a>
@@ -1216,10 +1244,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-model-hipergeometryczny" class="md-nav__link">
+  <a href="#task-7-hypergeometric-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7 — Model hipergeometryczny
+        Task 7 — Hypergeometric Model
       
     </span>
   </a>
@@ -1227,10 +1255,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-model-geometryczny" class="md-nav__link">
+  <a href="#task-8-geometric-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8 — Model geometryczny
+        Task 8 — Geometric Model
       
     </span>
   </a>
@@ -1238,10 +1266,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-model-poissona" class="md-nav__link">
+  <a href="#task-9-poisson-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9 — Model Poissona
+        Task 9 — Poisson Model
       
     </span>
   </a>
@@ -1249,10 +1277,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-model-wielomianowy" class="md-nav__link">
+  <a href="#task-10-multinomial-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10 — Model wielomianowy
+        Task 10 — Multinomial Model
       
     </span>
   </a>
@@ -1301,7 +1329,7 @@
   <span class="md-ellipsis">
     
   
-    Zaawansowane
+    Advanced
   
 
     
@@ -1317,7 +1345,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Zaawansowane
+    Advanced
   
 
           </label>
@@ -1337,7 +1365,7 @@
   <span class="md-ellipsis">
     
   
-    1. Zdarzenia i prawdopodobieństwo
+    1. Events & Probability
   
 
     
@@ -1365,7 +1393,7 @@
   <span class="md-ellipsis">
     
   
-    2. Zmienne losowe
+    2. Random Variables
   
 
     
@@ -1393,7 +1421,7 @@
   <span class="md-ellipsis">
     
   
-    3. Parametry rozkładu
+    3. Distribution Parameters
   
 
     
@@ -1421,7 +1449,7 @@
   <span class="md-ellipsis">
     
   
-    4. Wybrane rozkłady
+    4. Selected Distributions
   
 
     
@@ -1449,7 +1477,7 @@
   <span class="md-ellipsis">
     
   
-    5. Twierdzenia graniczne
+    5. Limit Theorems
   
 
     
@@ -1477,7 +1505,7 @@
   <span class="md-ellipsis">
     
   
-    6. Podstawowe statystyki
+    6. Basic Statistics
   
 
     
@@ -1505,7 +1533,7 @@
   <span class="md-ellipsis">
     
   
-    7. Estymacja
+    7. Estimation
   
 
     
@@ -1533,7 +1561,7 @@
   <span class="md-ellipsis">
     
   
-    8. Weryfikacja hipotez
+    8. Hypothesis Testing
   
 
     
@@ -1561,7 +1589,7 @@
   <span class="md-ellipsis">
     
   
-    9. Korelacja i regresja
+    9. Correlation & Regression
   
 
     
@@ -1589,7 +1617,7 @@
   <span class="md-ellipsis">
     
   
-    10. Zaawansowane metody
+    10. Advanced Methods
   
 
     
@@ -1617,7 +1645,7 @@
   <span class="md-ellipsis">
     
   
-    11. Teoria decyzji
+    11. Decision Theory
   
 
     
@@ -1672,7 +1700,7 @@
   <span class="md-ellipsis">
     
   
-    Animacje
+    Animations
   
 
     
@@ -1688,7 +1716,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Animacje
+    Animations
   
 
           </label>
@@ -1806,7 +1834,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1815,15 +1843,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wprowadzenie" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wprowadzenie
+        Introduction
       
     </span>
   </a>
@@ -1831,10 +1859,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-model-dwumianowy-kontrola-jakosci" class="md-nav__link">
+  <a href="#task-1-binomial-model-quality-control" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1 — Model dwumianowy (kontrola jakości)
+        Task 1 — Binomial Model (Quality Control)
       
     </span>
   </a>
@@ -1842,10 +1870,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-model-hipergeometryczny-pobieranie-z-partii" class="md-nav__link">
+  <a href="#task-2-hypergeometric-model-sampling-from-a-batch" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2 — Model hipergeometryczny (pobieranie z partii)
+        Task 2 — Hypergeometric Model (Sampling from a Batch)
       
     </span>
   </a>
@@ -1853,10 +1881,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-model-geometryczny-oczekiwanie-na-pierwsze-zdarzenie" class="md-nav__link">
+  <a href="#task-3-geometric-model-waiting-for-the-first-event" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3 — Model geometryczny (oczekiwanie na pierwsze zdarzenie)
+        Task 3 — Geometric Model (Waiting for the First Event)
       
     </span>
   </a>
@@ -1864,10 +1892,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-model-poissona-napyw-zdarzen" class="md-nav__link">
+  <a href="#task-4-poisson-model-arrival-of-events" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4 — Model Poissona (napływ zdarzeń)
+        Task 4 — Poisson Model (Arrival of Events)
       
     </span>
   </a>
@@ -1875,10 +1903,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-model-wielomianowy-kategorie-wynikow" class="md-nav__link">
+  <a href="#task-5-multinomial-model-categories-of-outcomes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5 — Model wielomianowy (kategorie wyników)
+        Task 5 — Multinomial Model (Categories of Outcomes)
       
     </span>
   </a>
@@ -1886,10 +1914,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-model-dwumianowy" class="md-nav__link">
+  <a href="#task-6-binomial-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6 — Model dwumianowy
+        Task 6 — Binomial Model
       
     </span>
   </a>
@@ -1897,10 +1925,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-model-hipergeometryczny" class="md-nav__link">
+  <a href="#task-7-hypergeometric-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7 — Model hipergeometryczny
+        Task 7 — Hypergeometric Model
       
     </span>
   </a>
@@ -1908,10 +1936,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-model-geometryczny" class="md-nav__link">
+  <a href="#task-8-geometric-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8 — Model geometryczny
+        Task 8 — Geometric Model
       
     </span>
   </a>
@@ -1919,10 +1947,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-model-poissona" class="md-nav__link">
+  <a href="#task-9-poisson-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9 — Model Poissona
+        Task 9 — Poisson Model
       
     </span>
   </a>
@@ -1930,10 +1958,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-model-wielomianowy" class="md-nav__link">
+  <a href="#task-10-multinomial-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10 — Model wielomianowy
+        Task 10 — Multinomial Model
       
     </span>
   </a>
@@ -1957,133 +1985,133 @@
 
 
 
-<h1 id="lista-zadan-2-rozkady-prawdopodobienstwa-wybrane-modele">Lista zadań 2 — Rozkłady prawdopodobieństwa (wybrane modele)</h1>
+<h1 id="task-list-03-probability-distributions-selected-models">Task List 03 — Probability Distributions (Selected Models)</h1>
 <blockquote>
-<p><strong>Uwaga:</strong> Ta lista zadań jest w trakcie rozwoju. Na razie prosimy jej jeszcze nie robić. :)</p>
+<p><strong>Note:</strong> This task list is still being developed. For now, please don’t work on it yet. :)</p>
 </blockquote>
-<h2 id="wprowadzenie">Wprowadzenie</h2>
-<p>W wielu losowych sytuacjach interesuje nas liczba wystąpień pewnych zdarzeń: liczba wadliwych produktów w partii, liczba błędów w tekście, czas oczekiwania na pierwsze zdarzenie albo liczba zgłoszeń w systemie. Do opisu takich zjawisk teoria prawdopodobieństwa używa modeli probabilistycznych, nazywanych również rozkładami prawdopodobieństwa.</p>
-<p>Każdy rozkład opisuje inny typ doświadczenia losowego i odpowiada innym założeniom o sposobie występowania zdarzeń.</p>
-<p>W tej liście zadań wykorzystujemy pięć ważnych modeli:</p>
+<h2 id="introduction">Introduction</h2>
+<p>In many real-world random situations we are interested in the number of occurrences of certain events: defective products in a batch, the number of errors in a text, the waiting time until the first event occurs, or the number of requests in a system. To describe such phenomena mathematically, probability theory uses probabilistic models, also called probability distributions.</p>
+<p>Each distribution describes a different type of random experiment and corresponds to different assumptions about how events occur.</p>
+<p>In this task list we use five important models:</p>
 <ul>
-<li><strong>Rozkład dwumianowy (próby Bernoulliego)</strong> – modeluje liczbę sukcesów w ustalonej liczbie niezależnych prób o dwóch wynikach (sukces/porażka).</li>
-<li><strong>Rozkład hipergeometryczny</strong> – stosowany, gdy losujemy elementy <strong>bez zwracania</strong> z populacji skończonej zawierającej elementy różnych typów.</li>
-<li><strong>Rozkład geometryczny</strong> – opisuje liczbę prób potrzebnych do uzyskania <strong>pierwszego sukcesu</strong> w ciągu niezależnych prób.</li>
-<li><strong>Rozkład Poissona</strong> – modeluje liczbę zdarzeń zachodzących w danym przedziale czasu lub przestrzeni.</li>
-<li><strong>Rozkład wielomianowy</strong> – uogólnienie modelu dwumianowego na sytuacje, w których każda próba może dać <strong>więcej niż dwa możliwe wyniki</strong>.</li>
+<li><strong>Binomial distribution (Bernoulli trials)</strong> – models the number of successes in a fixed number of independent trials with two outcomes (success/failure).</li>
+<li><strong>Hypergeometric distribution</strong> – used when we draw elements <strong>without replacement</strong> from a finite population containing elements of different types.</li>
+<li><strong>Geometric distribution</strong> – describes the number of trials needed to obtain the <strong>first success</strong> in a sequence of independent trials.</li>
+<li><strong>Poisson distribution</strong> – models the number of events occurring within a given time or space interval.</li>
+<li><strong>Multinomial distribution</strong> – a generalization of the binomial model when each trial can result in <strong>more than two possible outcomes</strong>.</li>
 </ul>
-<p>Analiza tych modeli pozwala formalnie opisać doświadczenia losowe i obliczać prawdopodobieństwa zdarzeń w wielu praktycznych sytuacjach.</p>
+<p>The analysis of these models allows us to formally describe random experiments and compute probabilities of events in many practical situations.</p>
 <hr />
-<h2 id="zadanie-1-model-dwumianowy-kontrola-jakosci">Zadanie 1 — Model dwumianowy (kontrola jakości)</h2>
-<p>W fabryce produkowane są śruby. Każda śruba może być <strong>dobra</strong> albo <strong>wadliwa</strong>.<br />
-Prawdopodobieństwo, że losowo wybrana śruba jest wadliwa, wynosi <span class="arithmatex">\(p\)</span>.</p>
-<p>Rozważamy doświadczenie polegające na sprawdzeniu <strong>3 kolejnych śrub</strong>.</p>
-<p><strong>Polecenia</strong></p>
+<h2 id="task-1-binomial-model-quality-control">Task 1 — Binomial Model (Quality Control)</h2>
+<p>In a factory, screws are produced. Each screw can be either <strong>good</strong> or <strong>defective</strong>.<br />
+The probability that a randomly selected screw is defective equals <span class="arithmatex">\(p\)</span>.</p>
+<p>We consider an experiment consisting of checking <strong>3 consecutive screws</strong>.</p>
+<p><strong>Tasks</strong></p>
 <ol>
-<li>Opisz doświadczenie losowe.  </li>
-<li>Wyznacz przestrzeń prób <span class="arithmatex">\( \Omega \)</span>.  </li>
-<li>Podaj prawdopodobieństwa elementów przestrzeni prób.  </li>
-<li>Zdefiniuj, co uznajesz za <strong>sukces</strong> w tym modelu.</li>
+<li>Describe the random experiment.  </li>
+<li>Determine the sample space <span class="arithmatex">\( \Omega \)</span>.  </li>
+<li>Specify the probabilities of the elements of the sample space.  </li>
+<li>Define what is considered a <strong>success</strong> in this model.</li>
 </ol>
 <hr />
-<h2 id="zadanie-2-model-hipergeometryczny-pobieranie-z-partii">Zadanie 2 — Model hipergeometryczny (pobieranie z partii)</h2>
-<p>Magazyn zawiera <strong>20 komponentów</strong>, z czego <strong>5 jest wadliwych</strong>, a <strong>15 sprawnych</strong>.</p>
-<p>Losowo wybieramy <strong>4 komponenty bez zwracania</strong> do kontroli.</p>
-<p><strong>Polecenia</strong></p>
+<h2 id="task-2-hypergeometric-model-sampling-from-a-batch">Task 2 — Hypergeometric Model (Sampling from a Batch)</h2>
+<p>A warehouse contains <strong>20 components</strong>, of which <strong>5 are defective</strong> and <strong>15 are functional</strong>.</p>
+<p>We randomly select <strong>4 components without replacement</strong> for inspection.</p>
+<p><strong>Tasks</strong></p>
 <ol>
-<li>Opisz doświadczenie losowe.  </li>
-<li>Zdefiniuj przestrzeń prób <span class="arithmatex">\( \Omega \)</span> jako liczbę wadliwych elementów w próbie.  </li>
-<li>Wyznacz możliwe wartości zmiennej losowej.  </li>
-<li>Podaj rozkład prawdopodobieństwa.  </li>
-<li>Wyjaśnij, co oznacza <strong>sukces</strong> w tym modelu.</li>
+<li>Describe the random experiment.  </li>
+<li>Define the sample space <span class="arithmatex">\( \Omega \)</span> as the number of defective elements in the sample.  </li>
+<li>Determine the possible values of the random variable.  </li>
+<li>Provide the probability distribution.  </li>
+<li>Explain what a <strong>success</strong> means in this model.</li>
 </ol>
 <hr />
-<h2 id="zadanie-3-model-geometryczny-oczekiwanie-na-pierwsze-zdarzenie">Zadanie 3 — Model geometryczny (oczekiwanie na pierwsze zdarzenie)</h2>
-<p>W drukarni każda wydrukowana strona może zawierać <strong>błąd druku</strong> z prawdopodobieństwem <span class="arithmatex">\(p\)</span>.</p>
-<p>Doświadczenie polega na obserwowaniu kolejnych stron aż do pojawienia się <strong>pierwszego błędu</strong>.</p>
-<p><strong>Polecenia</strong></p>
+<h2 id="task-3-geometric-model-waiting-for-the-first-event">Task 3 — Geometric Model (Waiting for the First Event)</h2>
+<p>In a printing house, each printed page may contain a <strong>printing error</strong> with probability <span class="arithmatex">\(p\)</span>.</p>
+<p>The experiment consists of observing consecutive pages until the <strong>first error</strong> appears.</p>
+<p><strong>Tasks</strong></p>
 <ol>
-<li>Opisz doświadczenie losowe.  </li>
-<li>Wyznacz przestrzeń prób <span class="arithmatex">\( \Omega \)</span>.  </li>
-<li>Podaj rozkład prawdopodobieństwa.  </li>
-<li>Określ, co uznajesz za sukces.</li>
+<li>Describe the random experiment.  </li>
+<li>Determine the sample space <span class="arithmatex">\( \Omega \)</span>.  </li>
+<li>Provide the probability distribution.  </li>
+<li>Specify what is considered a success.</li>
 </ol>
 <hr />
-<h2 id="zadanie-4-model-poissona-napyw-zdarzen">Zadanie 4 — Model Poissona (napływ zdarzeń)</h2>
-<p>Usługa internetowa otrzymuje średnio <strong>3 zgłoszenia błędów na godzinę</strong>.</p>
-<p>Zakładamy, że liczba zgłoszeń w danym przedziale czasu ma <strong>rozkład Poissona</strong>.</p>
-<p><strong>Polecenia</strong></p>
+<h2 id="task-4-poisson-model-arrival-of-events">Task 4 — Poisson Model (Arrival of Events)</h2>
+<p>A web service receives on average <strong>3 error reports per hour</strong>.</p>
+<p>We assume that the number of reports in a given time interval follows a <strong>Poisson distribution</strong>.</p>
+<p><strong>Tasks</strong></p>
 <ol>
-<li>Opisz doświadczenie losowe.  </li>
-<li>Wyznacz przestrzeń prób <span class="arithmatex">\( \Omega \)</span>.  </li>
-<li>Podaj wzór na rozkład prawdopodobieństwa.  </li>
-<li>Zinterpretuj parametr <span class="arithmatex">\( \lambda \)</span>.</li>
+<li>Describe the random experiment.  </li>
+<li>Determine the sample space <span class="arithmatex">\( \Omega \)</span>.  </li>
+<li>Provide the formula of the probability distribution.  </li>
+<li>Interpret the parameter <span class="arithmatex">\( \lambda \)</span>.</li>
 </ol>
 <hr />
-<h2 id="zadanie-5-model-wielomianowy-kategorie-wynikow">Zadanie 5 — Model wielomianowy (kategorie wyników)</h2>
-<p>Gracz rzuca <strong>kostką 5 razy</strong>.</p>
-<p>Wyniki grupujemy w trzy kategorie:</p>
+<h2 id="task-5-multinomial-model-categories-of-outcomes">Task 5 — Multinomial Model (Categories of Outcomes)</h2>
+<p>A player rolls a <strong>die 5 times</strong>.</p>
+<p>The outcomes are grouped into three categories:</p>
 <ul>
-<li>małe liczby (1–2)  </li>
-<li>średnie liczby (3–4)  </li>
-<li>duże liczby (5–6)</li>
+<li>small numbers (1–2)  </li>
+<li>medium numbers (3–4)  </li>
+<li>large numbers (5–6)</li>
 </ul>
-<p><strong>Polecenia</strong></p>
+<p><strong>Tasks</strong></p>
 <ol>
-<li>Opisz doświadczenie losowe.  </li>
-<li>Zdefiniuj przestrzeń prób.  </li>
-<li>Zapisz rozkład wielomianowy.  </li>
-<li>Wyjaśnij interpretację parametrów.</li>
+<li>Describe the random experiment.  </li>
+<li>Define the sample space.  </li>
+<li>Specify the multinomial distribution.  </li>
+<li>Explain the interpretation of the parameters.</li>
 </ol>
 <hr />
-<h2 id="zadanie-6-model-dwumianowy">Zadanie 6 — Model dwumianowy</h2>
-<p>Prawdopodobieństwo wyprodukowania wadliwej części wynosi <strong>0.04</strong>.</p>
-<p>Kontroler sprawdza <strong>10 części</strong>.</p>
-<p>Oblicz prawdopodobieństwo, że:</p>
+<h2 id="task-6-binomial-model">Task 6 — Binomial Model</h2>
+<p>The probability of producing a defective part is <strong>0.04</strong>.</p>
+<p>An inspector checks <strong>10 parts</strong>.</p>
+<p>Calculate the probability that:</p>
 <ul>
-<li>dokładnie <strong>2 części są wadliwe</strong>,  </li>
-<li><strong>co najmniej jedna część</strong> jest wadliwa.</li>
+<li>exactly <strong>2 parts are defective</strong>,  </li>
+<li><strong>at least one part</strong> is defective.</li>
 </ul>
 <hr />
-<h2 id="zadanie-7-model-hipergeometryczny">Zadanie 7 — Model hipergeometryczny</h2>
-<p>Pudełko zawiera:</p>
+<h2 id="task-7-hypergeometric-model">Task 7 — Hypergeometric Model</h2>
+<p>A box contains:</p>
 <ul>
-<li>12 sprawnych żarówek  </li>
-<li>3 wadliwe</li>
+<li>12 working light bulbs  </li>
+<li>3 defective ones</li>
 </ul>
-<p>Losujemy <strong>5 żarówek bez zwracania</strong>.</p>
-<p>Oblicz prawdopodobieństwo, że w próbie będą <strong>dokładnie 2 wadliwe żarówki</strong>.</p>
+<p>We draw <strong>5 bulbs without replacement</strong>.</p>
+<p>Calculate the probability that the sample contains <strong>exactly 2 defective bulbs</strong>.</p>
 <hr />
-<h2 id="zadanie-8-model-geometryczny">Zadanie 8 — Model geometryczny</h2>
-<p>Prawdopodobieństwo błędu podczas kompilacji programu wynosi <strong>0.1</strong> dla każdej kompilacji.</p>
-<p>Programista wykonuje kolejne kompilacje aż do wystąpienia <strong>pierwszego błędu</strong>.</p>
-<p>Oblicz prawdopodobieństwo, że:</p>
+<h2 id="task-8-geometric-model">Task 8 — Geometric Model</h2>
+<p>The probability of an error in program compilation is <strong>0.1</strong> for each compilation.</p>
+<p>A programmer performs consecutive compilations until the <strong>first error</strong> occurs.</p>
+<p>Calculate the probability that:</p>
 <ul>
-<li>pierwszy błąd pojawi się przy <strong>4. kompilacji</strong>,  </li>
-<li>pojawi się <strong>najpóźniej przy 3. kompilacji</strong>.</li>
-</ul>
-<hr />
-<h2 id="zadanie-9-model-poissona">Zadanie 9 — Model Poissona</h2>
-<p>Centrum obsługi klienta otrzymuje średnio <strong>5 zgłoszeń na godzinę</strong>.</p>
-<p>Oblicz prawdopodobieństwo, że w ciągu jednej godziny:</p>
-<ul>
-<li>wystąpią dokładnie <strong>3 zgłoszenia</strong>,  </li>
-<li>wystąpi <strong>co najmniej jedno zgłoszenie</strong>.</li>
+<li>the first error appears on the <strong>4th compilation</strong>,  </li>
+<li>it appears <strong>no later than the 3rd compilation</strong>.</li>
 </ul>
 <hr />
-<h2 id="zadanie-10-model-wielomianowy">Zadanie 10 — Model wielomianowy</h2>
-<p>Pudełko zawiera cukierki trzech smaków:</p>
+<h2 id="task-9-poisson-model">Task 9 — Poisson Model</h2>
+<p>A customer service center receives on average <strong>5 requests per hour</strong>.</p>
+<p>Calculate the probability that during one hour there will be:</p>
 <ul>
-<li>truskawkowe – 40%  </li>
-<li>cytrynowe – 35%  </li>
-<li>miętowe – 25%</li>
+<li>exactly <strong>3 requests</strong>,  </li>
+<li><strong>at least one request</strong>.</li>
 </ul>
-<p>Losowo wybieramy <strong>6 cukierków niezależnie</strong>.</p>
-<p>Oblicz prawdopodobieństwo, że otrzymamy:</p>
+<hr />
+<h2 id="task-10-multinomial-model">Task 10 — Multinomial Model</h2>
+<p>A box contains candies of three flavors:</p>
 <ul>
-<li>3 truskawkowe  </li>
-<li>2 cytrynowe  </li>
-<li>1 miętowy</li>
+<li>strawberry – 40%  </li>
+<li>lemon – 35%  </li>
+<li>mint – 25%</li>
+</ul>
+<p>We randomly select <strong>6 candies independently</strong>.</p>
+<p>Calculate the probability that we obtain:</p>
+<ul>
+<li>3 strawberry  </li>
+<li>2 lemon  </li>
+<li>1 mint</li>
 </ul>
 
 
@@ -2134,12 +2162,12 @@ Prawdopodobieństwo, że losowo wybrana śruba jest wadliwa, wynosi <span class=
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../../javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
