@@ -4,48 +4,31 @@
 
 ## Introduction
 
-In probability theory, many problems reduce to counting:
+Many probability problems start by counting outcomes: the size of a sample space, the number of favorable outcomes, or the number of possible codes or arrangements. The main difficulty is usually not the formula, but recognizing which counting model applies.
 
-* the number of all possible outcomes,
-* the number of favorable outcomes,
-* the number of possible arrangements, selections, or codes.
+In this task list you will practice:
 
-To do this systematically, combinatorics uses several standard counting models. These models help describe sample spaces, events, and structured random experiments.
+* identifying the correct counting model,
+* translating a verbal description into a well-defined outcome type,
+* using the model to count outcomes in probability contexts.
 
-The aim of this task list is to develop the ability to:
+## Key Counting Questions
 
-* recognize which counting model applies,
-* distinguish between order and no order,
-* distinguish between repetition and no repetition,
-* distinguish between distinguishable and indistinguishable objects,
-* use counting ideas in probability contexts.
-
-## Theoretical Background
-
-## Basic Counting Questions
-
-Before solving a counting problem, always ask:
+Before choosing a formula, decide:
 
 1. Does **order** matter?
 2. Are we using **all objects** or only **some of them**?
 3. Are **repetitions allowed**?
-4. Are the objects **distinguishable** or **indistinguishable**?
-5. Are we constructing a **sequence**, choosing a **set**, or arranging objects in a **row** or **circle**?
+4. Are objects **distinguishable** or **indistinguishable**?
+5. What kind of outcome are we describing?
+   * a set,
+   * a sequence,
+   * a linear arrangement,
+   * or a circular arrangement?
 
-These questions determine which combinatorial model should be used.
+## Decision Tree for Choosing a Model
 
-## Recognizing the Correct Counting Model
-
-When solving a counting problem, the main difficulty is usually not the formula itself, but recognizing which combinatorial model applies.
-
-A useful strategy is to decide step by step:
-
-* are we using all objects or only some of them?
-* does order matter?
-* are repetitions allowed?
-* are the objects distinct or are some of them identical?
-
-The following decision tree summarizes the most common cases.
+The decision tree below helps identify the correct model quickly.
 
 ```text
 Start: What kind of outcome are we counting?
@@ -89,18 +72,11 @@ Are we using ALL objects or only SOME objects?
       arranging books, seating people, arranging letters
 ```
 
-This decision tree is only a guide, but in many elementary problems it helps identify the correct model immediately.
+## Overview of Counting Models
 
-In practice, students should first decide whether the outcome is:
+For **selections**: use a **combination** (unordered), a **k-permutation (ordered selection without repetition)**, or a **sequence with repetition**.
 
-* a selection,
-* an ordered sequence,
-* a linear arrangement,
-* or a circular arrangement.
-
-They should then check whether repetitions are allowed and whether equal objects are treated as identical.
-
-The sections below explain each of these counting models in more detail.
+For **arrangements of all objects**: use a **permutation**, a **circular permutation**, or a **permutation with repeated elements**.
 
 ---
 
@@ -328,29 +304,6 @@ $$
 This rule is useful when a problem must be split into cases.
 
 ---
-
-## Summary: How to Recognize the Correct Model
-A useful summary is:
-
-* **Permutation**
-  all objects used, order matters
-
-* **Circular permutation**
-  objects arranged in a circle (rotations treated as the same)
-
-* **Combination**
-  some objects chosen, order does not matter
-
-* **k-permutation (ordered selection without repetition)**
-  some objects chosen, order matters, no repetition
-
-* **Sequences with repetition**
-  some objects chosen, order matters, repetition allowed
-
-* **Permutations with repeated elements**
-  all objects arranged, but some are identical
-
-
 ## Task 01 – Basic Definitions and Classification
 
 For each of the following situations, determine whether it is best described by:
