@@ -1,4 +1,7 @@
 # 📘 Task 4 — Circular Permutations
+In how many ways can 7 people sit around a round table?
+In how many ways can they sit if two particular people must sit next to each other?
+In how many ways can they sit if those two people must sit opposite each other?
 
 ## 🎯 Goal
 Solve seating problems around a round table where:
