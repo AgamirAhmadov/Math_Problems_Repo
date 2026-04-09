@@ -1,4 +1,4 @@
-# 📘 Task 5 — Combinations
+[# 📘 Task 5 — Combinations
 1. A committee of 4 people is chosen from 12 students. How many committees are possible?
 2. How many committees contain a particular student?
 3. How many committees contain at least one of two particular students?
@@ -89,3 +89,4 @@ C(7,2) = 21
 | 2 | 165 |
 | 3 | 285 |
 | 4 | 210 |
+](https://github.com/AgamirAhmadov/Math_Problems_Repo/blob/patch-3/docs/en/4_Metody_probabilistyczne/basic/solutions_02_combinatorics/solution_05.md)
