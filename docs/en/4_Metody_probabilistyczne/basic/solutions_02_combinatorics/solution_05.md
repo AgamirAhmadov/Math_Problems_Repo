@@ -1,4 +1,8 @@
 # 📘 Task 5 — Combinations
+1. A committee of 4 people is chosen from 12 students. How many committees are possible?
+2. How many committees contain a particular student?
+3. How many committees contain at least one of two particular students?
+4. How many committees contain exactly two women if the group consists of 7 men and 5 women?
 
 ## 🎯 Goal
 Solve selection problems where:
