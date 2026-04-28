@@ -1,108 +1,182 @@
-📘 Task 01 – Basic Event Notation and Set Operations
-🎯 Goal
+# 📘 Task 01 – Basic Event Notation and Set Operations
 
+## 🎯 Goal
 For each experiment:
+- Define the **sample space** \( \Omega \)
+- Define **events**
+- Express them using **set operations** (union, intersection, complement, difference)
 
-Define the sample space Ω
-Define events
-Express them using set operations (union, intersection, complement, difference)
-🧪 1. One Toss of a Coin
-Sample Space
-Ω={H,T}
-Events
-A: result is heads
-A={H}
-B: result is not tails
-👉 "not tails" = complement of T
-B=T
-c
-={H}
-Key Idea
-Complement:
-A
-c
-={T}
-🎲 2. One Roll of a Fair Die
-Sample Space
-Ω={1,2,3,4,5,6}
-Events
-A: even number
-A={2,4,6}
-B: number > 3
-B={4,5,6}
-Set Operations
-Intersection (both conditions)
-A∩B={4,6}
-Union (at least one condition)
-A∪B={2,4,5,6}
-Difference (A but not B)
-A∖B={2}
-Complement of A
-A
-c
-={1,3,5}
-Key Idea
-Intersection = BOTH true
-Union = AT LEAST ONE true
-🪙🪙 3. Two Tosses of a Coin
-Sample Space
-Ω={HH,HT,TH,TT}
-Events
-A: at least one head
+---
 
-👉 Easier via complement:
+# 🧪 1. One Toss of a Coin
 
-"no heads" = TT
-A=Ω∖{TT}={HH,HT,TH}
-B: both tosses same
-B={HH,TT}
-Set Operations
-Intersection
-A∩B={HH}
-Union
-A∪B={HH,HT,TH,TT}=Ω
-Key Idea
-“At least one” → often use complement
-🃏 4. Drawing One Card from a Deck
-Sample Space
+## Sample Space
+\[
+\Omega = \{H, T\}
+\]
 
-Standard deck = 52 cards
+## Events
 
-Ω=all 52 cards
-Events
-A: card is a heart
-A={13 heart cards}
-B: card is a face card (J, Q, K)
-B={J, Q, K of all suits}
-Set Operations
-Intersection (heart AND face)
-A∩B={J♥, Q♥, K♥}
-Union (heart OR face)
-A∪B=A+B−(A∩B)
-Difference (heart but not face)
-A∖B={hearts except J,Q,K}
-Complement of A
-A
-c
-={all non-heart cards}
-Key Idea
-Face cards = 3 per suit → total 12
-Intersection avoids double counting
-🧠 Summary of Methods
-🔹 Step 1: Define Sample Space
+- **A: result is heads**
+\[
+A = \{H\}
+\]
 
-List all possible outcomes
+- **B: result is not tails**
+\[
+B = T^c = \{H\}
+\]
 
-🔹 Step 2: Translate Words → Sets
-"at least one" → often complement
-"both" → intersection
-"or" → union
-"not" → complement
-🔹 Step 3: Apply Set Operations
-Operation	Meaning
-A∪B	A OR B
-A∩B	A AND B
-A
-c
-	NOT A
-A∖B	A but NOT B
+## Complement
+\[
+A^c = \{T\}
+\]
+
+---
+
+# 🎲 2. One Roll of a Fair Die
+
+## Sample Space
+\[
+\Omega = \{1,2,3,4,5,6\}
+\]
+
+## Events
+
+- **A: even number**
+\[
+A = \{2,4,6\}
+\]
+
+- **B: number greater than 3**
+\[
+B = \{4,5,6\}
+\]
+
+## Set Operations
+
+- **Intersection (A AND B)**
+\[
+A \cap B = \{4,6\}
+\]
+
+- **Union (A OR B)**
+\[
+A \cup B = \{2,4,5,6\}
+\]
+
+- **Difference (A but not B)**
+\[
+A \setminus B = \{2\}
+\]
+
+- **Complement of A**
+\[
+A^c = \{1,3,5\}
+\]
+
+---
+
+# 🪙🪙 3. Two Tosses of a Coin
+
+## Sample Space
+\[
+\Omega = \{HH, HT, TH, TT\}
+\]
+
+## Events
+
+- **A: at least one head**
+\[
+A = \Omega \setminus \{TT\} = \{HH, HT, TH\}
+\]
+
+- **B: both tosses give the same result**
+\[
+B = \{HH, TT\}
+\]
+
+## Set Operations
+
+- **Intersection**
+\[
+A \cap B = \{HH\}
+\]
+
+- **Union**
+\[
+A \cup B = \{HH, HT, TH, TT\} = \Omega
+\]
+
+---
+
+# 🃏 4. Drawing One Card from a Deck
+
+## Sample Space
+\[
+\Omega = \text{all 52 cards}
+\]
+
+## Events
+
+- **A: card is a heart**
+\[
+A = \{\text{13 heart cards}\}
+\]
+
+- **B: card is a face card (J, Q, K)**
+\[
+B = \{\text{J, Q, K of all suits}\}
+\]
+
+## Set Operations
+
+- **Intersection (heart AND face card)**
+\[
+A \cap B = \{\text{J♥, Q♥, K♥}\}
+\]
+
+- **Union (heart OR face card)**
+\[
+A \cup B = A + B - (A \cap B)
+\]
+
+- **Difference (heart but not face)**
+\[
+A \setminus B = \{\text{hearts except J, Q, K}\}
+\]
+
+- **Complement of A**
+\[
+A^c = \{\text{all non-heart cards}\}
+\]
+
+---
+
+# 🧠 Summary
+
+## Key Translations
+
+- "at least one" → use complement  
+- "both" → intersection  
+- "or" → union  
+- "not" → complement  
+
+## Set Operations
+
+| Operation | Meaning |
+|----------|--------|
+| \( A \cup B \) | A OR B |
+| \( A \cap B \) | A AND B |
+| \( A^c \) | NOT A |
+| \( A \setminus B \) | A but NOT B |
+
+---
+
+# ✅ Final Insight
+
+The main idea is to translate:
+
+**words → sets → operations**
+
+This is the foundation for probability calculations.
