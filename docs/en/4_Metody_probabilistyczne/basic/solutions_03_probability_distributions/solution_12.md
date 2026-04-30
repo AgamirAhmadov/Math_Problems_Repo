@@ -1,6 +1,6 @@
 # 📘 Lab 4  Task 4 — Poisson Model (Arrival of Events)
 
-# 📘 Task 4 — Poisson Model (Arrival of Events)
+
 
 ## 🎯 Given
 A web service receives on average **3 error reports per hour**.
