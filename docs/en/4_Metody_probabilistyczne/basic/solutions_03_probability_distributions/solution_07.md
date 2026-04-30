@@ -10,9 +10,6 @@ Solve the following problems.
 ---
 
 
-# 📘 Task 07 – Simple Explanation + Solutions
-
-## 🧠 Basic Concepts
 
 ### 🔹 Prime Number
 A **prime number** is a number greater than 1 that has only **two divisors**:
