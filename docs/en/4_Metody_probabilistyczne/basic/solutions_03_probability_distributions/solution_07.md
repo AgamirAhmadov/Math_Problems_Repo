@@ -9,41 +9,66 @@ Solve the following problems.
 4. two cards are drawn without replacement. What is the probability that both are aces, given that at least one is an ace?
 ---
 
+
+# 📘 Task 07 – Simple Explanation + Solutions
+
+## 🧠 Basic Concepts
+
+### 🔹 Prime Number
+A **prime number** is a number greater than 1 that has only **two divisors**:
+- 1 and itself
+
+Examples:
+- 2, 3, 5 ✅
+- 4 ❌ (divisible by 1,2,4)
+
+👉 For a die (1–6), primes are:
+\[
+\{2,3,5\}
+\]
+
+---
+
+### 🔹 Event
+An **event** is a **set of outcomes**.
+
+Example:
+- Rolling a die → outcomes: {1,2,3,4,5,6}  
+- Event “even number” → {2,4,6}
+
+👉 Event = outcomes we care about
+
+---
+
 # 🎲 1. Two Dice Problem
 
-## Define Events
-
-- **A:** sum = 6  
-- **B:** at least one die shows a prime (2,3,5)
+### Given:
+- A: sum = 6  
+- B: at least one prime  
 
 ---
 
-## Sample Space Size
+### Step 1: Total outcomes
 \[
-|\Omega| = 36
+36
 \]
 
 ---
 
-## Step 1: Event A (sum = 6)
-
-Possible outcomes:
+### Step 2: A (sum = 6)
 \[
-A = \{(1,5),(2,4),(3,3),(4,2),(5,1)\}
-\]
+(1,5),(2,4),(3,3),(4,2),(5,1)
+\]  
+→ 5 outcomes
 
 ---
 
-## Step 2: Event B (at least one prime)
+### Step 3: B (at least one prime)
 
-Prime numbers: 2,3,5  
-
-Instead of listing directly, use complement:
-
-- no primes = both in {1,4,6}
-
+Non-prime = {1,4,6}  
+Both non-prime:
 \[
-|B^c| = 3 \times 3 = 9
+3 \times 3 = 9
 \]
 
 \[
@@ -52,129 +77,76 @@ Instead of listing directly, use complement:
 
 ---
 
-## Step 3: Intersection \( A \cap B \)
+### Step 4: A ∩ B
+All 5 outcomes valid
 
-From A, keep outcomes with at least one prime:
+---
 
-- (1,5) ✅  
-- (2,4) ✅  
-- (3,3) ✅  
-- (4,2) ✅  
-- (5,1) ✅  
-
+### Result:
 \[
-|A \cap B| = 5
+P(A|B) = \frac{5}{27}
 \]
 
 ---
 
-## Step 4: Conditional Probability
+# 👨‍👩‍👧 2. Selecting People
 
-\[
-P(A \mid B) = \frac{5/36}{27/36} = \frac{5}{27}
-\]
-
-✅ **Answer:**  
-\[
-P = \frac{5}{27}
-\]
+### Given:
+- 3 women, 4 men  
+- choose 2  
 
 ---
 
-# 👨‍👩‍👧 2. Selection Problem
-
-## Given
-- 4 men, 3 women → total 7
-
----
-
-## Event
-
-Probability both selected are women:
-
+### Probability both women:
 \[
-P = \frac{\binom{3}{2}}{\binom{7}{2}}
-\]
-
-\[
-= \frac{3}{21} = \frac{1}{7}
-\]
-
-✅ **Answer:**  
-\[
-P = \frac{1}{7}
+P = \frac{\binom{3}{2}}{\binom{7}{2}} = \frac{3}{21} = \frac{1}{7}
 \]
 
 ---
 
 # 🃏 3. Card Problem
 
-## Define Events
-
-- **A:** face card (J, Q, K → 12 cards)
-- **B:** black card (26 cards)
+### Given:
+- A: face card (J,Q,K → 12 cards)  
+- B: black cards (26 cards)
 
 ---
 
-## Intersection
+### Black face cards:
+6 cards (♠ and ♣)
 
-Black face cards:
-- J♠ Q♠ K♠  
-- J♣ Q♣ K♣  
+---
 
+### Result:
 \[
-|A \cap B| = 6
+P(A|B) = \frac{6}{26} = \frac{3}{13}
 \]
 
 ---
 
-## Conditional Probability
+# 🂡 4. Two Cards (Aces)
 
-\[
-P(A \mid B) = \frac{6}{26} = \frac{3}{13}
-\]
-
-✅ **Answer:**  
-\[
-P = \frac{3}{13}
-\]
+### Given:
+- A: both aces  
+- B: at least one ace  
 
 ---
 
-# 🂡 4. Two Cards Without Replacement
-
-## Define Events
-
-- **A:** both cards are aces  
-- **B:** at least one ace  
-
----
-
-## Step 1: Total ways
+### Total pairs:
 \[
 \binom{52}{2} = 1326
 \]
 
 ---
 
-## Step 2: Event A (both aces)
-
+### Both aces:
 \[
 \binom{4}{2} = 6
 \]
 
-\[
-P(A) = \frac{6}{1326}
-\]
-
 ---
 
-## Step 3: Event B (at least one ace)
-
-Use complement:
-
-- no ace = choose from 48 non-aces
-
+### At least one ace:
 \[
 \binom{48}{2} = 1128
 \]
@@ -185,43 +157,27 @@ P(B) = 1 - \frac{1128}{1326} = \frac{198}{1326}
 
 ---
 
-## Step 4: Conditional Probability
-
-Since \( A \subseteq B \):
-
+### Result:
 \[
-P(A \mid B) = \frac{P(A)}{P(B)} = \frac{6/1326}{198/1326} = \frac{6}{198}
-\]
-
-\[
-= \frac{1}{33}
-\]
-
-✅ **Answer:**  
-\[
-P = \frac{1}{33}
+P(A|B) = \frac{6}{198} = \frac{1}{33}
 \]
 
 ---
 
-# 🧠 Summary
+# ✅ Final Answers
 
-| Problem | Result |
+| Problem | Answer |
 |--------|--------|
 | Dice | \( \frac{5}{27} \) |
-| Selection | \( \frac{1}{7} \) |
-| Cards (black → face) | \( \frac{3}{13} \) |
-| Two cards (aces) | \( \frac{1}{33} \) |
+| People | \( \frac{1}{7} \) |
+| Cards | \( \frac{3}{13} \) |
+| Aces | \( \frac{1}{33} \) |
 
 ---
 
-# ✅ Final Insight
+# 💡 Key Idea
 
-- Always define events clearly  
-- Use complement to simplify  
-- If \( A \subseteq B \), then:
-\[
-P(A \mid B) = \frac{P(A)}{P(B)}
-\]
-
-👉 Conditional probability = **restricted sample space**
+- Prime → special numbers (2,3,5)  
+- Event → group of outcomes  
+- Conditional probability →  
+👉 only consider cases where condition is true
