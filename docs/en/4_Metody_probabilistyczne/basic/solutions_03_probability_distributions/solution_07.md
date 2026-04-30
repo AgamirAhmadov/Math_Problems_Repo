@@ -1,11 +1,12 @@
 # 📘 Task 07 – Conditional Probability in Dice, Cards, and Selection Problems
 
 ## 🎯 Goal
-Use the definition of conditional probability:
-\[
-P(A \mid B) = \frac{P(A \cap B)}{P(B)}
-\]
+Solve the following problems.
 
+Two fair dice are rolled. What is the probability that the sum is 6, given that at least one die shows a prime number?
+From a group of 4 men and 3 women, 2 people are chosen at random. What is the probability that both chosen people are women?
+A card is drawn from a standard deck. What is the probability that it is a face card, given that it is black?
+Two cards are drawn without replacement. What is the probability that both are aces, given that at least one is an ace?
 ---
 
 # 🎲 1. Two Dice Problem
