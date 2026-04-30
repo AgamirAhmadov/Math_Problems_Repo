@@ -1,59 +1,82 @@
-# 📘 Lab 4  Task 4 — Poisson Model (Arrival of Events)
-
-
+# 📘 lab4 Task 4 — Poisson Model (Arrival of Events)
 
 ## 🎯 Given
 A web service receives on average **3 error reports per hour**.
+
+We assume a **Poisson distribution**.
 
 ---
 
 # 🧪 1. Random Experiment
 
-Observe how many error reports occur in **one hour**.
+👉 Observe the number of error reports in a fixed time interval (e.g., 1 hour).
 
-👉 Outcome = number of errors (0,1,2,...)
+- We repeat the same observation:
+  - “How many errors occur in one hour?”
 
----
-
-# 🎲 2. Sample Space
-
-Ω = {0,1,2,3,4,5,...}
-
-👉 All non-negative integers
+✔️ The outcome is a **number of events** (0, 1, 2, ...)
 
 ---
 
-# 📊 3. Probability Distribution (Poisson)
+# 🎲 2. Sample Space \( \Omega \)
 
-P(X = k) = (λ^k * e^(-λ)) / k!
+All possible numbers of error reports:
+
+\[
+\Omega = \{0,1,2,3,4,5,\dots\}
+\]
+
+👉 Infinite set of non-negative integers
+
+---
+
+# 📊 3. Probability Distribution (Poisson Formula)
+
+\[
+P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
+\]
 
 Where:
-- k = 0,1,2,...
-- λ = average rate
-- e ≈ 2.718
+- \( k = 0,1,2,\dots \)
+- \( \lambda \) = average number of events
+- \( e \approx 2.718 \)
 
 ---
 
-# ⚙️ 4. Parameter λ
+# ⚙️ 4. Parameter \( \lambda \)
 
-λ = 3
+\[
+\lambda = 3
+\]
 
-👉 Meaning:
-- On average → 3 errors per hour
+👉 Interpretation:
+
+- Average number of errors per hour = **3**
+- Also represents:
+  - expected value  
+  - rate of occurrence  
 
 ---
 
-# 🧠 Example
+# 🧠 Summary
 
-Probability of exactly 2 errors:
-
-P(X = 2) = (3² * e^(-3)) / 2!  
-= (9 * e^(-3)) / 2
+| Concept | Meaning |
+|--------|--------|
+| Random experiment | Count errors in a time interval |
+| Sample space | {0,1,2,...} |
+| Distribution | Poisson formula |
+| Parameter \( \lambda \) | average rate (3 errors/hour) |
 
 ---
 
 # ✅ Final Insight
 
-- Poisson → counts events over time  
-- λ = average number of events  
-- Only one parameter controls everything
+- Poisson is used for:
+  - rare events  
+  - counts over time  
+- Only one parameter:
+\[
+\lambda = \text{average rate}
+\]
+
+👉 Think: “How many events happen in a fixed time?”
