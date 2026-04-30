@@ -1,82 +1,59 @@
 # 📘 Lab 4  Task 4 — Poisson Model (Arrival of Events)
 
+# 📘 Task 4 — Poisson Model (Arrival of Events)
+
 ## 🎯 Given
 A web service receives on average **3 error reports per hour**.
-
-We assume a **Poisson distribution**.
 
 ---
 
 # 🧪 1. Random Experiment
 
-👉 Observe the number of error reports in a fixed time interval (e.g., 1 hour).
+Observe how many error reports occur in **one hour**.
 
-- We repeat the same observation:
-  - “How many errors occur in one hour?”
-
-✔️ The outcome is a **number of events** (0, 1, 2, ...)
+👉 Outcome = number of errors (0,1,2,...)
 
 ---
 
-# 🎲 2. Sample Space \( \Omega \)
+# 🎲 2. Sample Space
 
-All possible numbers of error reports:
+Ω = {0,1,2,3,4,5,...}
 
-\[
-\Omega = \{0,1,2,3,4,5,\dots\}
-\]
-
-👉 Infinite set of non-negative integers
+👉 All non-negative integers
 
 ---
 
-# 📊 3. Probability Distribution (Poisson Formula)
+# 📊 3. Probability Distribution (Poisson)
 
-\[
-P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
-\]
+P(X = k) = (λ^k * e^(-λ)) / k!
 
 Where:
-- \( k = 0,1,2,\dots \)
-- \( \lambda \) = average number of events
-- \( e \approx 2.718 \)
+- k = 0,1,2,...
+- λ = average rate
+- e ≈ 2.718
 
 ---
 
-# ⚙️ 4. Parameter \( \lambda \)
+# ⚙️ 4. Parameter λ
 
-\[
-\lambda = 3
-\]
+λ = 3
 
-👉 Interpretation:
-
-- Average number of errors per hour = **3**
-- Also represents:
-  - expected value  
-  - rate of occurrence  
+👉 Meaning:
+- On average → 3 errors per hour
 
 ---
 
-# 🧠 Summary
+# 🧠 Example
 
-| Concept | Meaning |
-|--------|--------|
-| Random experiment | Count errors in a time interval |
-| Sample space | {0,1,2,...} |
-| Distribution | Poisson formula |
-| Parameter \( \lambda \) | average rate (3 errors/hour) |
+Probability of exactly 2 errors:
+
+P(X = 2) = (3² * e^(-3)) / 2!  
+= (9 * e^(-3)) / 2
 
 ---
 
 # ✅ Final Insight
 
-- Poisson is used for:
-  - rare events  
-  - counts over time  
-- Only one parameter:
-\[
-\lambda = \text{average rate}
-\]
-
-👉 Think: “How many events happen in a fixed time?”
+- Poisson → counts events over time  
+- λ = average number of events  
+- Only one parameter controls everything
