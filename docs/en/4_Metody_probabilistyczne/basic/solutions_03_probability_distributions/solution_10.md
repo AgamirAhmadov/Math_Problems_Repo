@@ -6,12 +6,11 @@ medium numbers (3–4)
 large numbers (5–6)
 Tasks
 
-Describe the random experiment.
-Define the sample space.
-Specify the multinomial distribution.
-Explain the interpretation of the parameters.
+1. Describe the random experiment.
+2. Define the sample space.
+3. Specify the multinomial distribution.
+4. Explain the interpretation of the parameters.
 
-# Task 5 — Multinomial Model
 
 ## 1. Random Experiment
 
