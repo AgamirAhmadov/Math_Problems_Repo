@@ -1,5 +1,12 @@
 # 📘 lab4 Task 4 — Poisson Model (Arrival of Events)
 
+Tasks
+
+1. Describe the random experiment.
+2. Determine the sample space ( \Omega ).
+3. Provide the formula of the probability distribution.
+4. Interpret the parameter ( \lambda ).
+
 ## 🎯 Given
 A web service receives on average **3 error reports per hour**.
 
