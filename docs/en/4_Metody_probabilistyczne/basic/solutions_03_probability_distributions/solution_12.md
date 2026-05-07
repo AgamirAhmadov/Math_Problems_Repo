@@ -1,5 +1,9 @@
 # 📘 List 4 Task 4 — Poisson Model (Arrival of Events)
 
+A web service receives on average 3 error reports per hour.
+
+We assume that the number of reports in a given time interval follows a Poisson distribution.
+
 Tasks
 
 1. Describe the random experiment.
