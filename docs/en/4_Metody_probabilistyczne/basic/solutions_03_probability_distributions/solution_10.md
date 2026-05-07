@@ -1,4 +1,4 @@
-# Task 5 — Multinomial Model (Categories of Outcomes)
+# LIst 4 Task 5 — Multinomial Model (Categories of Outcomes)
 
 ## 1. Description of the Random Experiment
 
