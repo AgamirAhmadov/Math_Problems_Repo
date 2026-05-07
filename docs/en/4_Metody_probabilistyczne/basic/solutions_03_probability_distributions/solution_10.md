@@ -1,4 +1,15 @@
 # LIst 4 Task 5 — Multinomial Model (Categories of Outcomes)
+The outcomes are grouped into three categories:
+
+small numbers (1–2)
+medium numbers (3–4)
+large numbers (5–6)
+Tasks
+
+Describe the random experiment.
+Define the sample space.
+Specify the multinomial distribution.
+Explain the interpretation of the parameters.
 
 ## 1. Description of the Random Experiment
 
