@@ -11,142 +11,81 @@ Define the sample space.
 Specify the multinomial distribution.
 Explain the interpretation of the parameters.
 
-## 1. Description of the Random Experiment
+# Task 5 — Multinomial Model
 
-A player rolls a fair six-sided die 5 times.  
-Each outcome of a roll is classified into one of three categories:
+## 1. Random Experiment
 
-- **Small numbers:** 1 or 2
-- **Medium numbers:** 3 or 4
-- **Large numbers:** 5 or 6
+A player rolls a fair die 5 times.
 
-We observe how many times each category occurs during the 5 rolls.
+Each result is placed into one of these categories:
 
----
+- Small numbers → 1 or 2
+- Medium numbers → 3 or 4
+- Large numbers → 5 or 6
 
-## 2. Sample Space
-
-The sample space consists of all possible sequences of 5 die rolls.
-
-\[
-\Omega = \{1,2,3,4,5,6\}^5
-\]
-
-Each element of the sample space is an ordered sequence of 5 outcomes, for example:
-
-\[
-(1,3,6,2,5)
-\]
-
-Instead of tracking exact numbers, we may also represent outcomes by category counts:
-
-\[
-(X_1, X_2, X_3)
-\]
-
-where:
-
-- \(X_1\) = number of small outcomes
-- \(X_2\) = number of medium outcomes
-- \(X_3\) = number of large outcomes
-
-subject to:
-
-\[
-X_1 + X_2 + X_3 = 5
-\]
+We count how many times each category appears.
 
 ---
 
-## 3. Multinomial Distribution
+# 2. Sample Space
 
-The random vector:
+The sample space is all possible results from 5 die rolls.
 
-\[
-(X_1, X_2, X_3)
-\]
+Example outcomes:
 
-follows a multinomial distribution:
+- (1, 3, 5, 2, 6)
+- (2, 2, 4, 5, 1)
+- (6, 6, 3, 4, 2)
 
-\[
-(X_1, X_2, X_3) \sim \text{Multinomial}(n=5; p_1, p_2, p_3)
-\]
+Each roll can be:
+
+- small
+- medium
+- large
+
+---
+
+# 3. Multinomial Distribution
+
+Let:
+
+- X₁ = number of small results
+- X₂ = number of medium results
+- X₃ = number of large results
 
 Since the die is fair:
 
-- Probability of a small number:
+- P(small) = 2/6 = 1/3
+- P(medium) = 2/6 = 1/3
+- P(large) = 2/6 = 1/3
 
-\[
-p_1 = \frac{2}{6} = \frac{1}{3}
-\]
+The distribution is:
 
-- Probability of a medium number:
+(X₁, X₂, X₃) ~ Multinomial(5, 1/3, 1/3, 1/3)
 
-\[
-p_2 = \frac{2}{6} = \frac{1}{3}
-\]
+Also:
 
-- Probability of a large number:
+X₁ + X₂ + X₃ = 5
 
-\[
-p_3 = \frac{2}{6} = \frac{1}{3}
-\]
-
-Therefore:
-
-\[
-(X_1, X_2, X_3) \sim \text{Multinomial}\left(5; \frac13,\frac13,\frac13\right)
-\]
-
-The probability mass function is:
-
-\[
-P(X_1=x_1, X_2=x_2, X_3=x_3)
-=
-\frac{5!}{x_1!x_2!x_3!}
-\left(\frac13\right)^{x_1}
-\left(\frac13\right)^{x_2}
-\left(\frac13\right)^{x_3}
-\]
-
-where:
-
-\[
-x_1 + x_2 + x_3 = 5
-\]
+because there are 5 rolls in total.
 
 ---
 
-## 4. Interpretation of the Parameters
+# 4. Interpretation of Parameters
 
-### Number of Trials
+- 5  
+  Total number of die rolls
 
-\[
-n = 5
-\]
+- 1/3  
+  Probability of each category
 
-The die is rolled 5 times.
+- X₁  
+  Counts small numbers
 
-### Categories
+- X₂  
+  Counts medium numbers
 
-There are 3 possible categories for each roll:
+- X₃  
+  Counts large numbers
 
-1. Small
-2. Medium
-3. Large
-
-### Category Probabilities
-
-\[
-p_1 = p_2 = p_3 = \frac13
-\]
-
-Each category has probability \(1/3\) because each category contains two equally likely die outcomes.
-
-### Random Variables
-
-- \(X_1\): number of small results
-- \(X_2\): number of medium results
-- \(X_3\): number of large results
-
-These variables count how many times each category appears in the 5 rolls.
+These variables show how many times each category appears in the 5 rolls.
