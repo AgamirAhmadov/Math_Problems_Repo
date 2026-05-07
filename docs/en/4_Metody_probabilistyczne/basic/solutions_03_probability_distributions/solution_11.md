@@ -1,4 +1,12 @@
 # Task 6 — Binomial Model
+The probability of producing a defective part is 0.04.
+
+An inspector checks 10 parts.
+
+Calculate the probability that:
+
+exactly 2 parts are defective,
+at least one part is defective.
 
 ## Given Information
 
