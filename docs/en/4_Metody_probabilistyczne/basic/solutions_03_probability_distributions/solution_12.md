@@ -1,4 +1,4 @@
-# 📘 lab4 Task 4 — Poisson Model (Arrival of Events)
+# 📘 List 4 Task 4 — Poisson Model (Arrival of Events)
 
 Tasks
 
